@@ -1,0 +1,80 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/*  */
+#navbar{
+    display: flex;
+    align-item:center;
+}
+ /* navigation bar: logo and images */
+ #logo{
+    margin: 12px 30px;
+ }
+ #logo img{
+    height: 62px;
+    margin: -7px -23px     
+ }
+ /*navigation bar: list styling */
+ #navbar{
+    position: relative;
+}
+ #navbar ul{
+    display: flex;
+}
+ #navbar ul li{
+      list-style-type: none;
+      font-size: 1.3rem;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+ #navbar ul li a{
+    color: white;
+    display: block;
+     padding: 24px 29px;
+     border-radius:20px;
+     text-decoration: none;
+}
+ #navbar ul li a:hover{
+    color:black;
+    background-color: white;
+ 
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px ;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    content:"";
+    background: url('bg.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
